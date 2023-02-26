@@ -46,8 +46,11 @@ INSTALLED_APPS = [
     'store',
     'django.contrib.humanize',
     'crispy_forms',
+    'stripe'
+
 
 ]
+
 
 
 MIDDLEWARE = [
@@ -134,12 +137,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 
-STATIC_URL = '/static/'
+STATIC_URL ='/static/'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
 
+CRISPY_TEMPLATE_PACK = "tailwind"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoFile'
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_TEMPLATE_PACKS = 'bootstrap4'
+
+PUBLIC_KEY = 'pk_test_51MfZ9bH5rIQsdALaH5G3EF8pTK75pR8al1wQ5LzGKdhq8q8urkrp2VP3GIINuVBKralpUddoUQK2czT8p2sJZr8900v1eACkqC'
+SECRET_KEY = 'sk_test_51MfZ9bH5rIQsdALaZCZSXk4GiOcZsK0Ilw4IWFoVV5HsJ78DXSSey6ePDvq0sUGDvretwsWL52SW6bdt4EWkdwm300rFu3up0C'
+
 
 

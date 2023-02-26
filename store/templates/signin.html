@@ -2,11 +2,11 @@
 {% block content%}
 
     <div class="container">
-    <h2 align="center">แบบฟอร์มลงทะเบียน</h2>
+    <h2 align="center">ลงชื่อเข้าใช้ระบบ</h2>
         <form method="post">
             {% csrf_token %}
             <p>{{ form }}</p>
-            <input type="submit" class="btn btn-primary" value="Register">
+            <input type="submit" value="Login" class="btn-success">
         </form>
     </div>
 {% endblock %}

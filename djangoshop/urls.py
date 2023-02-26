@@ -29,7 +29,10 @@ urlpatterns = [
     path('cart/add/<int:product_id>',views.addCart,name="addCart"),
     path('cartdetail/',views.cartdetail,name="cartdetail"),
     path('cartdetail/remove/<int:product_id>',views.removeCart,name="removeCart"),
-    path('account/create',views.signUpView,name="signUp")
+    path('account/create',views.signUpView,name="signUp"),
+    path('account/login',views.signInView,name="signIn"),
+    path('account/logout',views.signOutView,name="signOut"),
+    path('search/',views.search,name="search"),
 ]
 
 if settings.DEBUG :
